@@ -2,10 +2,8 @@ shell.prefix("source ~jgomez/init_shell")
 
 from datetime import datetime
 
-date1 = str(datetime.now())
-tmp = str.replace(date1," ",".") 
-tmp2 = str.replace(tmp,":","")
-date = str.replace(tmp2,"-","")
+
+date = datetime.now().strftime('%Y%m%d.%H%M%S')
 
 logs_dir = config["Parameters"]["logs_dir"]
 if not os.path.exists(logs_dir):
