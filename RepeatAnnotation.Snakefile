@@ -2,7 +2,6 @@ shell.prefix("source ~jgomez/init_shell")
 
 from datetime import datetime
 
-
 date = datetime.now().strftime('%Y%m%d.%H%M%S')
 
 logs_dir = config["Parameters"]["logs_dir"]
